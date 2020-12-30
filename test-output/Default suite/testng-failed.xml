@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SeleniumFramework.FinalProject.ValudateNavBar">
+      <class name="SeleniumFramework.FinalProject.HomePage">
         <methods>
-          <include name="basePageToNavigate"/>
+          <include name="initializer"/>
+          <include name="basePageToNavigate" invocation-numbers="1"/>
         </methods>
-      </class> <!-- SeleniumFramework.FinalProject.ValudateNavBar -->
+      </class> <!-- SeleniumFramework.FinalProject.HomePage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

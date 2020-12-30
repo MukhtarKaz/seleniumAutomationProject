@@ -3,6 +3,8 @@ package SeleniumFramework.FinalProject;
 import java.io.IOException;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import pageObjects.LandingPage;
@@ -10,11 +12,14 @@ import resources.Base;
 
 public class ValidateTitle extends Base {
 
-    @Test
-    public void basePageToNavigate() throws IOException {
-
+    @BeforeTest
+    public void initializer() throws IOException {
 	driver = initDriver();
 	driver.get(urlName);
+    }
+
+    @Test
+    public void basePageToNavigate() throws IOException {
 
 	LandingPage landingPage = new LandingPage(driver);
 
@@ -22,6 +27,11 @@ public class ValidateTitle extends Base {
 
 	Assert.assertEquals(landingPage.getFeaturedTextElement().getText(), "FEATURED COURSES");
 
+    }
+
+    @AfterTest
+    public void teardown() {
+	driver.quit();
     }
 
 }

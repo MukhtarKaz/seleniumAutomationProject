@@ -11,6 +11,12 @@ import resources.Base;
 
 public class HomePage extends Base {
 
+//    @BeforeTest
+//    public void initializer() throws IOException {
+//	driver = initDriver();
+//	driver.get(urlName);
+//    }
+
     @Test(dataProvider = "getData")
     public void basePageToNavigate(String username, String password, String userInfo) throws IOException {
 
@@ -31,6 +37,11 @@ public class HomePage extends Base {
 
     }
 
+//    @AfterTest
+//    public void teardown() {
+//	driver.quit();
+//    }
+
     @DataProvider
     public String[][] getData() {
 	// We are making parameterization for data
@@ -45,7 +56,6 @@ public class HomePage extends Base {
 	data[1][2] = "Strict User";
 
 	return data;
-
     }
 
 }
