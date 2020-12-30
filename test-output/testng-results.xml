@@ -2,12 +2,16 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-30T13:56:35 JST" name="Default suite" finished-at="2020-12-30T13:56:50 JST" duration-ms="15053">
+  <suite started-at="2020-12-30T16:42:48 JST" name="Default suite" finished-at="2020-12-30T16:42:57 JST" duration-ms="9024">
     <groups>
     </groups>
-    <test started-at="2020-12-30T13:56:35 JST" name="Default test" finished-at="2020-12-30T13:56:50 JST" duration-ms="15053">
+    <test started-at="2020-12-30T16:42:48 JST" name="Default test" finished-at="2020-12-30T16:42:57 JST" duration-ms="9024">
       <class name="SeleniumFramework.FinalProject.HomePage">
-        <test-method signature="basePageToNavigate(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:SeleniumFramework.FinalProject.HomePage@36d585c]" started-at="2020-12-30T13:56:35 JST" name="basePageToNavigate" data-provider="getData" finished-at="2020-12-30T13:56:42 JST" duration-ms="7672" status="PASS">
+        <test-method is-config="true" signature="initializer()[pri:0, instance:SeleniumFramework.FinalProject.HomePage@78ffe6dc]" started-at="2020-12-30T16:42:48 JST" name="initializer" finished-at="2020-12-30T16:42:52 JST" duration-ms="3527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializer -->
+        <test-method signature="basePageToNavigate(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:SeleniumFramework.FinalProject.HomePage@78ffe6dc]" started-at="2020-12-30T16:42:52 JST" name="basePageToNavigate" data-provider="getData" finished-at="2020-12-30T16:42:55 JST" duration-ms="3441" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -28,7 +32,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageToNavigate -->
-        <test-method signature="basePageToNavigate(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:SeleniumFramework.FinalProject.HomePage@36d585c]" started-at="2020-12-30T13:56:42 JST" name="basePageToNavigate" data-provider="getData" finished-at="2020-12-30T13:56:50 JST" duration-ms="7335" status="PASS">
+        <test-method signature="basePageToNavigate(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:SeleniumFramework.FinalProject.HomePage@78ffe6dc]" started-at="2020-12-30T16:42:55 JST" name="basePageToNavigate" data-provider="getData" finished-at="2020-12-30T16:42:56 JST" duration-ms="1415" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -49,6 +53,10 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageToNavigate -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:SeleniumFramework.FinalProject.HomePage@78ffe6dc]" started-at="2020-12-30T16:42:56 JST" name="teardown" finished-at="2020-12-30T16:42:57 JST" duration-ms="617" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
       </class> <!-- SeleniumFramework.FinalProject.HomePage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

@@ -2,6 +2,8 @@ package SeleniumFramework.FinalProject;
 
 import java.io.IOException;
 
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -11,16 +13,15 @@ import resources.Base;
 
 public class HomePage extends Base {
 
-//    @BeforeTest
-//    public void initializer() throws IOException {
-//	driver = initDriver();
-//	driver.get(urlName);
-//    }
+    @BeforeTest
+    public void initializer() throws IOException {
+	driver = initDriver();
+
+    }
 
     @Test(dataProvider = "getData")
     public void basePageToNavigate(String username, String password, String userInfo) throws IOException {
 
-	driver = initDriver();
 	driver.get(urlName);
 
 	LandingPage landingPage = new LandingPage(driver);
@@ -33,14 +34,12 @@ public class HomePage extends Base {
 	System.out.println(username);
 	loginPage.getLogInButton().click();
 
-	driver.quit();
-
     }
 
-//    @AfterTest
-//    public void teardown() {
-//	driver.quit();
-//    }
+    @AfterTest
+    public void teardown() {
+	driver.quit();
+    }
 
     @DataProvider
     public String[][] getData() {
