@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-12-30T11:54:33 JST" name="Default suite" finished-at="2020-12-30T11:54:40 JST" duration-ms="6876">
+    <groups>
+    </groups>
+    <test started-at="2020-12-30T11:54:33 JST" name="Default test" finished-at="2020-12-30T11:54:40 JST" duration-ms="6876">
+      <class name="SeleniumFramework.FinalProject.ValudateNavBar">
+        <test-method signature="basePageToNavigate()[pri:0, instance:SeleniumFramework.FinalProject.ValudateNavBar@50caa560]" started-at="2020-12-30T11:54:33 JST" name="basePageToNavigate" finished-at="2020-12-30T11:54:40 JST" duration-ms="6844" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageToNavigate -->
+      </class> <!-- SeleniumFramework.FinalProject.ValudateNavBar -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
