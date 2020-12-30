@@ -2,6 +2,9 @@ package SeleniumFramework.FinalProject;
 
 import java.io.IOException;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
@@ -12,6 +15,11 @@ import pageObjects.LoginPage;
 import resources.Base;
 
 public class HomePage extends Base {
+
+    // To launch tests parallel , localizing driver
+    WebDriver driver;
+
+    private static Logger log = LogManager.getLogger(HomePage.class.getName());
 
     @BeforeTest
     public void initializer() throws IOException {
@@ -30,9 +38,13 @@ public class HomePage extends Base {
 	LoginPage loginPage = new LoginPage(driver);
 
 	loginPage.getUsernameInput().sendKeys(username);
+	log.info("Sent username " + username);
 	loginPage.getPasswordInput().sendKeys(password);
-	System.out.println(username);
+	log.info("Sent password " + password);
+
+	// System.out.println(username);
 	loginPage.getLogInButton().click();
+	log.info("Login page is clicked");
 
     }
 

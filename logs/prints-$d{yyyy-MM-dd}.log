@@ -1,0 +1,12 @@
+17:44:20.646 [TestNG-tests-1] INFO  SeleniumFramework.FinalProject.HomePage - Sent password 123456
+17:44:20.904 [TestNG-tests-1] INFO  SeleniumFramework.FinalProject.HomePage - Login page is clicked
+17:44:21.765 [TestNG-tests-2] INFO  SeleniumFramework.FinalProject.ValidateTitle - navigated to test page
+17:44:21.798 [TestNG-tests-2] INFO  SeleniumFramework.FinalProject.ValidateTitle - Succesfully validated Text massage
+17:44:21.840 [TestNG-tests-3] INFO  SeleniumFramework.FinalProject.ValudateNavBar - HOME
+COURSES
+VIDEOS
+INTERVIEW GUIDE
+PRACTICE
+BLOG
+ABOUT
+CONTACT
