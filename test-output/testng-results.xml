@@ -1,17 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-30T11:54:33 JST" name="Default suite" finished-at="2020-12-30T11:54:40 JST" duration-ms="6876">
+  <suite started-at="2020-12-30T13:31:48 JST" name="Suite" finished-at="2020-12-30T13:32:17 JST" duration-ms="28826">
     <groups>
     </groups>
-    <test started-at="2020-12-30T11:54:33 JST" name="Default test" finished-at="2020-12-30T11:54:40 JST" duration-ms="6876">
+    <test started-at="2020-12-30T13:31:48 JST" name="Test" finished-at="2020-12-30T13:32:17 JST" duration-ms="28826">
+      <class name="SeleniumFramework.FinalProject.ValidateTitle">
+        <test-method signature="basePageToNavigate()[pri:0, instance:SeleniumFramework.FinalProject.ValidateTitle@4a668b6e]" started-at="2020-12-30T13:31:54 JST" name="basePageToNavigate" finished-at="2020-12-30T13:32:00 JST" duration-ms="6339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageToNavigate -->
+      </class> <!-- SeleniumFramework.FinalProject.ValidateTitle -->
       <class name="SeleniumFramework.FinalProject.ValudateNavBar">
-        <test-method signature="basePageToNavigate()[pri:0, instance:SeleniumFramework.FinalProject.ValudateNavBar@50caa560]" started-at="2020-12-30T11:54:33 JST" name="basePageToNavigate" finished-at="2020-12-30T11:54:40 JST" duration-ms="6844" status="PASS">
+        <test-method signature="basePageToNavigate()[pri:0, instance:SeleniumFramework.FinalProject.ValudateNavBar@4f67eb2a]" started-at="2020-12-30T13:31:48 JST" name="basePageToNavigate" finished-at="2020-12-30T13:31:54 JST" duration-ms="6145" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageToNavigate -->
       </class> <!-- SeleniumFramework.FinalProject.ValudateNavBar -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="SeleniumFramework.FinalProject.HomePage">
+        <test-method signature="basePageToNavigate(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:SeleniumFramework.FinalProject.HomePage@5f683daf]" started-at="2020-12-30T13:32:00 JST" name="basePageToNavigate" data-provider="getData" finished-at="2020-12-30T13:32:08 JST" duration-ms="7444" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nonstrict@test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NonStrict User]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageToNavigate -->
+        <test-method signature="basePageToNavigate(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:SeleniumFramework.FinalProject.HomePage@5f683daf]" started-at="2020-12-30T13:32:08 JST" name="basePageToNavigate" data-provider="getData" finished-at="2020-12-30T13:32:17 JST" duration-ms="8853" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[strict@test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Strict User]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageToNavigate -->
+      </class> <!-- SeleniumFramework.FinalProject.HomePage -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
