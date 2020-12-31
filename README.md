@@ -26,12 +26,12 @@ To run tests by maven:
 1. add dependencies into pom.xml (core and api);
 2. add log4j2.xml file intp path folder.
 3. add into build of pom.xml  --> plugin 
-	<resources>
+	"<resources>
       <resource>
         <directory>src/main/java/resources</directory>
         <filtering>true</filtering>
       </resource>
-     </resources>
+     </resources>"
 4. Instantiate Logger in tests and use it.  ( private static Logger log = LogManager.getLogger(Demo.class.getName());)
 5. After test refresh main folder and check log files.
 
@@ -41,7 +41,24 @@ Wrap them all individual test cases
 
 ### Parallel tests running
 add into testng.xml 
-<suite name="Suite" parallel="tests">
+"<suite name="Suite" parallel="tests">"
+
+
+### Implementation ITestListener interface 
+
+public class Listeners implements ITestListener  and implement all methods of this interface
+
+Example of using  you can find in the method onTestFailure, where when a test fails, the screenshot of page will be taken 
+and saved into file.
+
+### Extent report example
+
+
+
+
+
+
+
 
 
 

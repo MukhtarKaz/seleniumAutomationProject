@@ -30,13 +30,13 @@ public class ValidateTitle extends Base {
     }
 
     @Test
-    public void basePageToNavigate() throws IOException {
+    public void validatingTitle() throws IOException {
 
 	LandingPage landingPage = new LandingPage(driver);
 
 	// System.out.println(landingPage.getFeaturedTextElement().getText());
 
-	Assert.assertEquals(landingPage.getFeaturedTextElement().getText(), "FEATURED COURSES");
+	Assert.assertEquals(landingPage.getFeaturedTextElement().getText(), "FEATURED COURSES123");
 	log.info("Succesfully validated Text massage");
 
     }
