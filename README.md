@@ -3,9 +3,6 @@
 ## This is the final project in the Selenium WebDriver Course
 
 
-
-
-
 ### TestNG Maven Integration
 
 Using Suite XML Files
@@ -41,7 +38,7 @@ Wrap them all individual test cases
 
 ### Parallel tests running
 add into testng.xml 
-"<suite name="Suite" parallel="tests">"
+"parallel="tests""
 
 
 ### Implementation ITestListener interface 
@@ -66,9 +63,22 @@ To work on parallel mode, we need to create an instance of ThreadLocal class to 
  Usage of tests
  "extentTest.get().log(Status.PASS, "Test Passed")"
  
- #### getting screenshot in extent report
+ #### Getting screenshot in extent report
  extentTest.get().addScreenCaptureFromPath(getScreenShot(failedTestMethod, driver), failedTestMethod);
  extentTest.get()  == test instance
+ 
+ 
+ 
+ #### Integration with Jenkins
+ 
+ 1. Download Jenkins.war file and locate it in PC
+ 2. CLI in the folder - launch Jenkins by command - java -jar jenkins.war --httpPort=9090
+ 3  In Jenkins page (localhost:9090)  to create new project select new Item
+   3.1  To use local project - use custom workspace and put the project path.
+   3.2 To trigger from Jenkins select Build-> Invoke top-level maven targets
+   3.3 In Goals  put your Maven commands (e.g.  mvn test)
+ 
+ 
  
 
 
