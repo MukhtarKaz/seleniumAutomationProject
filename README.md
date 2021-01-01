@@ -95,6 +95,8 @@ To work on parallel mode, we need to create an instance of ThreadLocal class to 
 	To run choose in Build wit parameters.
 	
 	
+	#### Running tests head less mode (without opening browsers)
+	
 
 
  

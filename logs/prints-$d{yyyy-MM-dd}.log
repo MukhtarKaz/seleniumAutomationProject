@@ -1,12 +1,5 @@
-21:25:16.766 [TestNG-tests-1] INFO  SeleniumFramework.FinalProject.HomePage - Login page is clicked
-21:25:16.846 [TestNG-tests-3] INFO  SeleniumFramework.FinalProject.ValudateNavBar - HOME
-COURSES
-VIDEOS
-INTERVIEW GUIDE
-PRACTICE
-BLOG
-ABOUT
-CONTACT
-21:25:17.675 [TestNG-tests-2] INFO  SeleniumFramework.FinalProject.ValidateTitle - navigated to test page
-21:25:18.027 [TestNG-tests-1] INFO  SeleniumFramework.FinalProject.HomePage - Sent username strict@test.com
-21:25:18.079 [TestNG-tests-1] INFO  SeleniumFramework.FinalProject.HomePage - Sent password 123456
+21:47:56.692 [TestNG-tests-1] INFO  SeleniumFramework.FinalProject.HomePage - Sent username nonstrict@test.com
+21:47:56.751 [TestNG-tests-1] INFO  SeleniumFramework.FinalProject.HomePage - Sent password 123456
+21:47:57.016 [TestNG-tests-1] INFO  SeleniumFramework.FinalProject.HomePage - Login page is clicked
+21:47:58.616 [TestNG-tests-1] INFO  SeleniumFramework.FinalProject.HomePage - Sent username strict@test.com
+21:47:58.680 [TestNG-tests-1] INFO  SeleniumFramework.FinalProject.HomePage - Sent password 123456
