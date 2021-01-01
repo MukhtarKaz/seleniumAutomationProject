@@ -2,34 +2,88 @@
 <testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-01T16:57:40 JST" name="Suite" finished-at="2021-01-01T16:57:51 JST" duration-ms="11583">
+  <suite started-at="2021-01-01T21:25:08 JST" name="Suite" finished-at="2021-01-01T21:25:19 JST" duration-ms="10800">
     <groups>
     </groups>
-    <test started-at="2021-01-01T16:57:40 JST" name="App Test" finished-at="2021-01-01T16:57:40 JST" duration-ms="8">
+    <test started-at="2021-01-01T21:25:08 JST" name="App Test" finished-at="2021-01-01T21:25:08 JST" duration-ms="8">
     </test> <!-- App Test -->
-    <test started-at="2021-01-01T16:57:40 JST" name="Validation navbar" finished-at="2021-01-01T16:57:47 JST" duration-ms="7376">
+    <test started-at="2021-01-01T21:25:08 JST" name="Validation navbar" finished-at="2021-01-01T21:25:17 JST" duration-ms="8714">
       <class name="SeleniumFramework.FinalProject.ValudateNavBar">
-        <test-method is-config="true" signature="initializer()[pri:0, instance:SeleniumFramework.FinalProject.ValudateNavBar@aec50a1]" started-at="2021-01-01T16:57:40 JST" name="initializer" finished-at="2021-01-01T16:57:46 JST" duration-ms="6528" status="PASS">
+        <test-method is-config="true" signature="initializer()[pri:0, instance:SeleniumFramework.FinalProject.ValudateNavBar@13579834]" started-at="2021-01-01T21:25:08 JST" name="initializer" finished-at="2021-01-01T21:25:16 JST" duration-ms="7954" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializer -->
-        <test-method signature="basePageToNavigate()[pri:0, instance:SeleniumFramework.FinalProject.ValudateNavBar@aec50a1]" started-at="2021-01-01T16:57:46 JST" name="basePageToNavigate" finished-at="2021-01-01T16:57:46 JST" duration-ms="115" status="PASS">
+        <test-method signature="basePageToNavigate()[pri:0, instance:SeleniumFramework.FinalProject.ValudateNavBar@13579834]" started-at="2021-01-01T21:25:16 JST" name="basePageToNavigate" finished-at="2021-01-01T21:25:16 JST" duration-ms="110" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageToNavigate -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:SeleniumFramework.FinalProject.ValudateNavBar@aec50a1]" started-at="2021-01-01T16:57:46 JST" name="teardown" finished-at="2021-01-01T16:57:47 JST" duration-ms="722" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:SeleniumFramework.FinalProject.ValudateNavBar@13579834]" started-at="2021-01-01T21:25:16 JST" name="teardown" finished-at="2021-01-01T21:25:17 JST" duration-ms="642" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- SeleniumFramework.FinalProject.ValudateNavBar -->
     </test> <!-- Validation navbar -->
-    <test started-at="2021-01-01T16:57:40 JST" name="Validation site title" finished-at="2021-01-01T16:57:49 JST" duration-ms="9032">
-      <class name="SeleniumFramework.FinalProject.ValidateTitle">
-        <test-method is-config="true" signature="initializer()[pri:0, instance:SeleniumFramework.FinalProject.ValidateTitle@40f33492]" started-at="2021-01-01T16:57:40 JST" name="initializer" finished-at="2021-01-01T16:57:47 JST" duration-ms="7774" status="PASS">
+    <test started-at="2021-01-01T21:25:08 JST" name="Validating user inputs" finished-at="2021-01-01T21:25:18 JST" duration-ms="10159">
+      <class name="SeleniumFramework.FinalProject.HomePage">
+        <test-method is-config="true" signature="initializer()[pri:0, instance:SeleniumFramework.FinalProject.HomePage@3174cb09]" started-at="2021-01-01T21:25:08 JST" name="initializer" finished-at="2021-01-01T21:25:12 JST" duration-ms="3727" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializer -->
-        <test-method signature="validatingTitle()[pri:0, instance:SeleniumFramework.FinalProject.ValidateTitle@40f33492]" started-at="2021-01-01T16:57:47 JST" name="validatingTitle" finished-at="2021-01-01T16:57:47 JST" duration-ms="20" status="FAIL">
+        <test-method signature="basePageToNavigate(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:SeleniumFramework.FinalProject.HomePage@3174cb09]" started-at="2021-01-01T21:25:12 JST" name="basePageToNavigate" data-provider="getData" finished-at="2021-01-01T21:25:16 JST" duration-ms="4178" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nonstrict@test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NonStrict User]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageToNavigate -->
+        <test-method signature="basePageToNavigate(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:SeleniumFramework.FinalProject.HomePage@3174cb09]" started-at="2021-01-01T21:25:16 JST" name="basePageToNavigate" data-provider="getData" finished-at="2021-01-01T21:25:18 JST" duration-ms="1539" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[strict@test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Strict User]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageToNavigate -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:SeleniumFramework.FinalProject.HomePage@3174cb09]" started-at="2021-01-01T21:25:18 JST" name="teardown" finished-at="2021-01-01T21:25:18 JST" duration-ms="675" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- SeleniumFramework.FinalProject.HomePage -->
+    </test> <!-- Validating user inputs -->
+    <test started-at="2021-01-01T21:25:08 JST" name="Validation site title" finished-at="2021-01-01T21:25:19 JST" duration-ms="10800">
+      <class name="SeleniumFramework.FinalProject.ValidateTitle">
+        <test-method is-config="true" signature="initializer()[pri:0, instance:SeleniumFramework.FinalProject.ValidateTitle@72efb5c1]" started-at="2021-01-01T21:25:08 JST" name="initializer" finished-at="2021-01-01T21:25:17 JST" duration-ms="8837" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializer -->
+        <test-method signature="validatingTitle()[pri:0, instance:SeleniumFramework.FinalProject.ValidateTitle@72efb5c1]" started-at="2021-01-01T21:25:17 JST" name="validatingTitle" finished-at="2021-01-01T21:25:17 JST" duration-ms="37" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [FEATURED COURSES123] but found [FEATURED COURSES]]]>
@@ -72,65 +126,11 @@ at java.base/java.lang.Thread.run(Thread.java:829)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatingTitle -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:SeleniumFramework.FinalProject.ValidateTitle@40f33492]" started-at="2021-01-01T16:57:48 JST" name="teardown" finished-at="2021-01-01T16:57:49 JST" duration-ms="725" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:SeleniumFramework.FinalProject.ValidateTitle@72efb5c1]" started-at="2021-01-01T21:25:19 JST" name="teardown" finished-at="2021-01-01T21:25:19 JST" duration-ms="615" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- SeleniumFramework.FinalProject.ValidateTitle -->
     </test> <!-- Validation site title -->
-    <test started-at="2021-01-01T16:57:40 JST" name="Validating user inputs" finished-at="2021-01-01T16:57:51 JST" duration-ms="11583">
-      <class name="SeleniumFramework.FinalProject.HomePage">
-        <test-method is-config="true" signature="initializer()[pri:0, instance:SeleniumFramework.FinalProject.HomePage@41beb473]" started-at="2021-01-01T16:57:40 JST" name="initializer" finished-at="2021-01-01T16:57:43 JST" duration-ms="3765" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializer -->
-        <test-method signature="basePageToNavigate(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:SeleniumFramework.FinalProject.HomePage@41beb473]" started-at="2021-01-01T16:57:43 JST" name="basePageToNavigate" data-provider="getData" finished-at="2021-01-01T16:57:49 JST" duration-ms="5673" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[nonstrict@test.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[NonStrict User]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- basePageToNavigate -->
-        <test-method signature="basePageToNavigate(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:SeleniumFramework.FinalProject.HomePage@41beb473]" started-at="2021-01-01T16:57:49 JST" name="basePageToNavigate" data-provider="getData" finished-at="2021-01-01T16:57:51 JST" duration-ms="1487" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[strict@test.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Strict User]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- basePageToNavigate -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:SeleniumFramework.FinalProject.HomePage@41beb473]" started-at="2021-01-01T16:57:51 JST" name="teardown" finished-at="2021-01-01T16:57:51 JST" duration-ms="626" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- SeleniumFramework.FinalProject.HomePage -->
-    </test> <!-- Validating user inputs -->
   </suite> <!-- Suite -->
 </testng-results>

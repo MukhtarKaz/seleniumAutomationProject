@@ -22,7 +22,7 @@ public class ExtentReporterNG {
 	extent = new ExtentReports();
 	// attaching reporter
 	extent.attachReporter(reporter);
-	extent.setSystemInfo("Tester", "Mukhtar Otarbayev");
+	extent.setSystemInfo("Tester", "Name of tester");
 
 	return extent;
 

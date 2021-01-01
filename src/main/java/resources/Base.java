@@ -21,9 +21,10 @@ public class Base {
     Properties prop;
 
     public WebDriver initDriver() throws IOException {
+	String browserName;
 	prop = new Properties();
 	FileInputStream fis = new FileInputStream(
-		"C:\\MyProjects\\selenium_course\\FinalProject\\src\\main\\java\\resources\\data.properties");
+		System.getProperty("user.dir") + "\\src\\main\\java\\resources\\data.properties");
 
 	prop.load(fis);
 
@@ -34,19 +35,28 @@ public class Base {
 	// TO USE PARAMETER browser from Jenkins
 	// we use system properties. Because mvn -Dbrowser=chrome can be accessed by
 	// system.getProperty
-	String browserName = System.getProperty("browser");
 
 	// if (browserName == "chrome") IT WILL THROW ERROR NULL POINTER EXCEPTION,
 	// USE EQUALS
 
+	if (System.getProperty("browser") == null) {
+	    browserName = prop.getProperty("browser");
+	} else {
+	    browserName = System.getProperty("browser");
+	}
+
+	System.out.println(browserName);
 	if (browserName.equals("chrome")) {
-	    System.setProperty("webdriver.chrome.driver", "C:\\MyProjects\\chromedriver.exe");
+	    System.setProperty("webdriver.chrome.driver",
+		    System.getProperty("user.dir") + "\\src\\main\\java\\resources\\chromedriver.exe");
 	    driver = new ChromeDriver();
 	} else if (browserName.equals("firefox")) {
-	    System.setProperty("webdriver.gecko.driver", "C:\\MyProjects\\geckodriver.exe");
+	    System.setProperty("webdriver.gecko.driver",
+		    System.getProperty("user.dir") + "\\src\\main\\java\\resources\\geckodriver.exe");
 	    driver = new FirefoxDriver();
 	} else if (browserName.equals("IE")) {
-	    System.setProperty("webdriver.ie.driver", "C:\\MyProjects\\IEDriverServer.exe");
+	    System.setProperty("webdriver.ie.driver",
+		    System.getProperty("user.dir") + "\\src\\main\\java\\resources\\IEDriverServer.exe");
 	    driver = new InternetExplorerDriver();
 	}
 
