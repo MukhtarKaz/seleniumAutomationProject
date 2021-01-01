@@ -77,6 +77,26 @@ To work on parallel mode, we need to create an instance of ThreadLocal class to 
    3.1  To use local project - use custom workspace and put the project path.
    3.2 To trigger from Jenkins select Build-> Invoke top-level maven targets
    3.3 In Goals  put your Maven commands (e.g.  mvn test)
+   
+
+#### How to parameterize Jenkins build to run multiple options
+ For example -  it will help to run on the different browsers through Jenkins without changing source code on the project
+ 	TO USE PARAMETER browser from Jenkins we use system properties. Because mvn -Dbrowser=chrome can be accessed by
+	system.getProperty
+	e.g. String browserName = System.getProperty("browser");
+	
+	TO add parameters in Jenkins
+	projest config -> General -> this project is parameterized -> Choice Parameter
+	Name = e.g. browser
+	Choices = firefox, chrome etc.
+	
+	Then in build config add test -Dbrowser="$browser",   browser is system variable, $browser is jenkins variable with choices
+	
+	To run choose in Build wit parameters.
+	
+	
+
+
  
  
  

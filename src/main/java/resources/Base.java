@@ -27,8 +27,14 @@ public class Base {
 
 	prop.load(fis);
 
-	String browserName = prop.getProperty("browser");
+	// THIS PROP COMES FROM data.properties
+	// String browserName = prop.getProperty("browser");
 	urlName = prop.getProperty("url");
+
+	// TO USE PARAMETER browser from Jenkins
+	// we use system properties. Because mvn -Dbrowser=chrome can be accessed by
+	// system.getProperty
+	String browserName = System.getProperty("browser");
 
 	// if (browserName == "chrome") IT WILL THROW ERROR NULL POINTER EXCEPTION,
 	// USE EQUALS
