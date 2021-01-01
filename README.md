@@ -6,7 +6,7 @@
 
 
 
-###TestNG Maven Integration
+### TestNG Maven Integration
 
 Using Suite XML Files
 
@@ -52,6 +52,24 @@ Example of using  you can find in the method onTestFailure, where when a test fa
 and saved into file.
 
 ### Extent report example
+
+
+1. Add extent report dependency to pom.xml
+2. Define Extent Reports methods as in class ExtentReporterNG
+3. Use instances as in Listener class
+4. After running test update Project folder, open index.html file
+
+Above defined works well  fer sequential execution, but parallel running won't work correctly.
+
+To work on parallel mode, we need to create an instance of ThreadLocal class to be ThreadSafe
+ "ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>()"
+ Usage of tests
+ "extentTest.get().log(Status.PASS, "Test Passed")"
+ 
+ #### getting screenshot in extent report
+ extentTest.get().addScreenCaptureFromPath(getScreenShot(failedTestMethod, driver), failedTestMethod);
+ extentTest.get()  == test instance
+ 
 
 
 
