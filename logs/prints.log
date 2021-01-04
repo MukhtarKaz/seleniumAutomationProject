@@ -1,3 +1,0 @@
-17:29:10.497 [TestNG-tests-1] INFO  SeleniumFramework.FinalProject.HomePage - Sent username strict@test.com
-17:29:10.574 [TestNG-tests-1] INFO  SeleniumFramework.FinalProject.HomePage - Sent password 123456
-17:29:10.836 [TestNG-tests-1] INFO  SeleniumFramework.FinalProject.HomePage - Login page is clicked
