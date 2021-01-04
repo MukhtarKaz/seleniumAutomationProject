@@ -23,6 +23,7 @@ public class HomePage extends Base {
 
     @BeforeTest
     public void initializer() throws IOException {
+
 	driver = initDriver();
 
     }

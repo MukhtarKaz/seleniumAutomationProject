@@ -1,5 +1,12 @@
-21:47:56.692 [TestNG-tests-1] INFO  SeleniumFramework.FinalProject.HomePage - Sent username nonstrict@test.com
-21:47:56.751 [TestNG-tests-1] INFO  SeleniumFramework.FinalProject.HomePage - Sent password 123456
-21:47:57.016 [TestNG-tests-1] INFO  SeleniumFramework.FinalProject.HomePage - Login page is clicked
-21:47:58.616 [TestNG-tests-1] INFO  SeleniumFramework.FinalProject.HomePage - Sent username strict@test.com
-21:47:58.680 [TestNG-tests-1] INFO  SeleniumFramework.FinalProject.HomePage - Sent password 123456
+16:55:37.466 [main] INFO  SeleniumFramework.FinalProject.HomePage - Login page is clicked
+13:37:51.309 [TestNG-tests-2] INFO  SeleniumFramework.FinalProject.ValidateTitle - Driver is initialized
+13:37:55.297 [TestNG-tests-2] INFO  SeleniumFramework.FinalProject.ValidateTitle - navigated to test page
+13:37:57.328 [TestNG-tests-3] INFO  SeleniumFramework.FinalProject.ValudateNavBar - HOME
+COURSES
+VIDEOS
+INTERVIEW GUIDE
+PRACTICE
+BLOG
+ABOUT
+CONTACT
+13:37:58.690 [TestNG-tests-1] INFO  SeleniumFramework.FinalProject.HomePage - Sent username nonstrict@test.com
