@@ -97,6 +97,11 @@ To work on parallel mode, we need to create an instance of ThreadLocal class to 
 	
 	#### Running tests head less mode (without opening browsers)
 	
+	// To run in the headless mode use ChromeOptions class and pass into driver
+	    ChromeOptions options = new ChromeOptions();
+	   	options.addArguments("headless");
+	    driver = new ChromeDriver(options);
+	
 
 
  

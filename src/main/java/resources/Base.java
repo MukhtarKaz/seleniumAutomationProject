@@ -20,6 +20,7 @@ public class Base {
     public WebDriver driver;
     public String urlName;
     Properties prop;
+    public static String name = "testName";
 
     public WebDriver initDriver() throws IOException {
 	String browserName;
